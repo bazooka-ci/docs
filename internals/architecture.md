@@ -20,7 +20,7 @@ The three containers are:
     * Exposes port 8080
     * is linked with bazooka/server
 
-![Bazooka architecture](./assets/img/bzk_archi.png)
+![Bazooka architecture](https://raw.githubusercontent.com/bazooka-ci/docs/master/assets/img/bzk_archi.png)
 
 To show you we tell the truth:
 
@@ -40,7 +40,7 @@ Starting a job will trigger a build pipeline, which consists of many non-persist
 
 Here is a schema of what happens when a Bazooka job is triggered
 
-![Bazooka architecture](./assets/img/bzk_build_pipeline.png)
+![Bazooka architecture](https://raw.githubusercontent.com/bazooka-ci/docs/master/assets/img/bzk_build_pipeline.png)
 
 * **Step 0**: The server will start a Docker container for the orchestration of the job, *bazooka/orchestration*.
 

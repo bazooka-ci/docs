@@ -33,7 +33,7 @@ Each type a plugin container is run, Bazooka will mount volumes, pass environmen
 
 The contract of a SCM plugin is:
 
-![SCM Plugin Contrat](./assets/img/scm_plugin.png)
+![SCM Plugin Contrat](https://raw.githubusercontent.com/bazooka-ci/docs/master/assets/img/scm_plugin.png)
 
 * **Input Volumes**
     * **/bazooka-key** *(optional)* - The private key defined at the project level
