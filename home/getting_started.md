@@ -21,7 +21,7 @@ bzk project create bazooka git \
   git@github.com:bazooka-ci/bazooka.git ~/.ssh/id_github
 ```
 
-The private SCM Key is optional. If none is provided, Bazooka will try to use the default SCM Key provided during [Bazooka installation](http://docs.bazooka-ci.io/home/installation.html)
+The private SCM Key is optional. If none is provided, Bazooka will try to use the default SCM Key provided during [Bazooka installation](../home/installation.html)
 
 ### Register a new project with the Web Interface
 
@@ -36,7 +36,7 @@ The private SCM Key is optional. If none is provided, Bazooka will try to use th
 As described in our philosophy, the configuration of your bazooka build is versioned alongside your code.
 
 Create a `.bazooka.yml` file and commit it in your repository.
-The format of this file is described in detail in the section [Configure your build](http://docs.bazooka-ci.io/home/build_configuration.html)
+The format of this file is described in detail in the section [Configure your build](../home/build_configuration.html)
 
 ## Step 4: Trigger your first build
 
