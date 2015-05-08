@@ -16,4 +16,4 @@ This his why Bazooka was created.
 
 Bazooka uses Docker as a runtime and extension mechanism.
 
-In Bazooka, everything is a plugin, and every plugin is a Docker container. You can read more about our [plugin architecture here](internals/plugin_architecture.md)
+In Bazooka, everything is a plugin, and every plugin is a Docker container. You can read more about our [plugin architecture here](http://docs.bazooka-ci.io/internals/plugin_architecture.md)
