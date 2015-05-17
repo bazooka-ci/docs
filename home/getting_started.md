@@ -52,7 +52,7 @@ Fill the fields like this
 
 The Payload URL should look like this
 
-*https://url_of_your_bazooka_server>/project/id_of_your_project>/github*
+*https://url_of_your_bazooka_server/project/id_of_your_project/github*
 
 And the secret field is the bazooka hook key of your project
 
