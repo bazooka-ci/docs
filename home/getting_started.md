@@ -29,7 +29,30 @@ The private SCM Key is optional. If none is provided, Bazooka will try to use th
 
 ## Step 2: Setup SCM Hook
 
-(Coming Soon)
+To setup a SCM hook, you will need the ID of your project, as well as the hook key, a secret key that will be used for the authentication.
+
+You can get all the information you need with bazooka cli
+
+```
+> bzk project list
+PROJECT ID     NAME                SCM TYPE       SCM URI                               HOOK KEY
+f0cd487a       my_project          git            https://github.com/me/project.git     9a2ec0e2284761449d1d718c3dbe373a
+983db807       my_other_project    git            https://github.com/me/other.git       03556bc99e790a0093e21fcf81d8ea27
+```
+
+### Setup Github Webhook
+
+Go to the settings of your github project, in the tab *Webhooks & Services*
+
+In the *Webhooks* space, choose *Add Webhook*
+
+Fill the fields like this
+
+![Github Webhook](https://raw.githubusercontent.com/bazooka-ci/docs/master/assets/img/github_webhook.png)
+
+The Payload URL should look like this
+
+*https://<url of your bazooka server>/project/<id of your project>/github*
 
 ## Step 3: Add the .bazooka.yml file to your repository
 
