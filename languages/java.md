@@ -18,6 +18,7 @@ Bazooka built-in Java support comes with the following jvm implementations
 * openjdk7
 * openjdk8
 * oraclejdk6
+* oraclejdk7
 * oraclejdk8
 
 You can choose multiple versions on which your project will be tested
