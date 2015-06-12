@@ -1,8 +1,8 @@
 # Job parameters
 
-Parameters can be injected to a job and are exposed as environment variable.
+Parameters can be injected into a job and are exposed as environment variables.
 
-`.bazooka.yml` can define mandatory parameters by adding an entry on the env section without value:
+`.bazooka.yml` can define mandatory parameters by adding an entry in the env section without value:
 
 ```
 env:
