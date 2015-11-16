@@ -7,6 +7,7 @@
     * [Build Configuration](home/build_configuration.md)
     * [Build Lifecycle](home/build_lifecycle.md)
     * [Secured Variables](home/secured_variables.md)
+    * [Parameters](home/parameters.md)
     * [Permutations](home/permutations.md)
     * [Services](home/services.md)
     * [Project Configuration](home/project_configuration.md)
