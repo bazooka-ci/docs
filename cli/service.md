@@ -20,7 +20,7 @@ Commands:
 You can run `bzk service start` with multiple options
 
 ```
-Usage: bzk service start [--home|--scm-key|--registry|--docker-sock]... [--tag]
+Usage: bzk service start [--home|--scm-key|--registry|--docker-sock]... [--version]
 
 Start bazooka
 
@@ -30,7 +30,7 @@ Options:
   --mongo-uri=""     URI of a MongoDB server ($BZK_MONGO_URI)
   --registry=""      ($BZK_REGISTRY)
   --docker-sock=""   Location of the Docker unix socket, usually /var/run/docker.sock ($BZK_DOCKERSOCK)
-  --tag=""           The bazooka version to run
+  --version=""           The bazooka version to run
 ```
 
 ## Restart Bazooka
@@ -38,9 +38,15 @@ Options:
 Restart Bazooka with the options previously set with `bzk run start`
 
 ```
-Usage: bzk service restart
+Usage: bzk service restart [--recreate [-swd]]
 
 Restart bazooka
+
+Options:
+  --recreate        Recreate existing Bazooka containers
+  -s, --server      Recreate existing server container
+  -w, --web         Recreate existing web container
+  -d, --database    Recreate existing database container
 ```
 
 ## Upgrade Bazooka
