@@ -4,16 +4,26 @@ Bazooka allows you to use external services (databases, messaging systems...) wi
 
 Services are simply Docker containers that are linked with the container in which your build runs. This allows us to provide as many services as there are containers on the Docker Hub. It is also possible to use containers from your local Docker registry
 
-## Internals
+## Syntax
 
-To explain how services work, we will start with an example
+To declare Bazooka services for your build, you need to add the *services* attribute to your *.bazooka.yml* file. You can declare as many services as you want. Each service has two attributes:
+
+* **image**: the name of the Docker image that will be used as a service. It can be an image from the docker hub, from a private registry, and optionnaly have a version
+* **alias (optional)**: the alias that will be used to link the container (see Docker documentation about container linking](https://docs.docker.com/userguide/dockerlinks/#container-linking) for more information on aliases). If alias is not specified, Bazooka will generate one from the name of the image, escaping unwanted characters such as *:* or *.*
+
+Let's look at an example
 
 ```yaml
 services:
-  - mongo
+  - image: mongo
+  - image: registry.mycompany.net/myteam/testservice:1.0.0
+    alias: test
 ```
 
-Bazooka will parse the configuration file, register all the services declared, start the associated Docker containers, and link them at runtime with your build container. If this was done using the Docker CLI, it would give:
+
+## Internals
+
+When you declare services in your config file, Bazooka will parse the configuration file, start the associated Docker containers, and link them at runtime with your build container. If this was done using the Docker CLI, it would give:
 
 ```bash
 # Start all services
