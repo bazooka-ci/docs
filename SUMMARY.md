@@ -17,6 +17,7 @@
 * [Language Guides](languages/README.md)
     * [Java](languages/java.md)
     * [PHP](languages/php.md)
+    * [Ruby](languages/ruby.md)
 * [Contribute](contribute/README.md)
     * [Developping Bazooka](contribute/developping.md)
 * [Bazooka Internals](internals/README.md)
